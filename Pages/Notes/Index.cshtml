@@ -1,0 +1,27 @@
+﻿@page
+@model AspNetIdentity.Pages.Notes.IndexModel
+@{
+}
+<table>
+    <tr>
+        <th>
+            <h1>Title</h1>
+        </th>
+        <th>
+            <h1>Content</h1>
+        </th>
+    </tr>
+    @foreach (var item in Model.Notes)
+    {
+        <tr>
+            <td>
+                @item.Title
+            </td>
+            <td>
+                @item.Content
+            </td>
+        </tr>
+    }
+
+</table>
+
